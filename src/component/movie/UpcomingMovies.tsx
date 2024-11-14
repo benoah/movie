@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ReactPlayer from "react-player";
 import { fetchUpcomingMovies } from "../../service/apiService";
 import styled from "styled-components";
 import { useMovieList } from "../../hooks/useMovieList";
@@ -29,14 +28,13 @@ const countryOptions = [
 const UpcomingMovies: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [displayedMovies, setDisplayedMovies] = useState<Movie[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [, setLoading] = useState<boolean>(true);
   const [page, setPage] = useState<number>(1);
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [selectedCountry, setSelectedCountry] = useState<string>("US");
 
   // Use the custom hook
-  const { selectedMovie, openMovieModal, closeModal, videoKey } =
-    useMovieList();
+  const { selectedMovie, openMovieModal, closeModal } = useMovieList();
 
   // Fetch movies from API based on selected country
   const fetchMovies = useCallback(async () => {

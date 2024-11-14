@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FiPlus, FiX, FiPlay } from "react-icons/fi";
+import { FiX, FiPlay } from "react-icons/fi";
 import ReactPlayer from "react-player";
 import { fetchMovieVideos } from "../../service/apiService";
 import { Movie, Genre } from "../../types";

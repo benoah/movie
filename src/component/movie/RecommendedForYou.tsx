@@ -15,7 +15,7 @@ const RecommendedForYou: React.FC<RecommendedForYouProps> = ({
   const [filterType, setFilterType] = useState<"movie" | "tv">(type);
 
   // Use the custom hooks
-  const { recommendations, genres, loading, error } = useRecommendations(
+  const { recommendations, genres, loading } = useRecommendations(
     selectedId,
     filterType
   );

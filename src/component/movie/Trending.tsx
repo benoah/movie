@@ -1,11 +1,9 @@
-// src/component/movie/Trending.tsx
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useMovies } from "../../hooks/useMovies";
 import { useMovieList } from "../../hooks/useMovieList";
 import MovieModal from "../shared/MovieModal";
-import { Movie } from "../../types";
 
 interface TrendingProps {
   className?: string;
@@ -16,7 +14,7 @@ const Trending: React.FC<TrendingProps> = ({ className }) => {
   const [isDragging] = useState(false); // Note: isDragging is not updated
 
   // Use the custom hooks
-  const { movies, genres, loading, error } = useMovies(timeWindow);
+  const { movies, genres, loading } = useMovies(timeWindow);
   const {
     selectedMovie,
     autoPlay,

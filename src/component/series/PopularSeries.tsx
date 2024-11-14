@@ -16,13 +16,12 @@ const PopularSeries: React.FC<PopularSeriesProps> = ({ className }) => {
   const [filteredSeries, setFilteredSeries] = useState<Series[]>([]);
   const [genres, setGenres] = useState<Genre[]>([]);
   const [selectedGenreId, setSelectedGenreId] = useState<number | null>(null);
-  const [minRating, setMinRating] = useState<number | null>(null);
-  const [releaseYear, setReleaseYear] = useState<number | null>(null);
+  const [releaseYear] = useState<number | null>(null);
   const [selectedSeries, setSelectedSeries] = useState<Series | null>(null);
   const [openModal, setOpenModal] = useState(false);
   const [autoPlay, setAutoPlay] = useState(false);
   const [likedSeries, setLikedSeries] = useState<Set<number>>(new Set());
-
+  const [minRating] = useState<number | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Fetch genres on component mount
@@ -75,7 +74,7 @@ const PopularSeries: React.FC<PopularSeriesProps> = ({ className }) => {
         : true;
       return genreMatch && ratingMatch && yearMatch;
     });
-  }, [series, selectedGenreId, minRating, releaseYear]);
+  }, [series, selectedGenreId, minRating, releaseYear]); // Fjern `minRating` her
 
   useEffect(() => {
     setFilteredSeries(filteredSeriesMemo);

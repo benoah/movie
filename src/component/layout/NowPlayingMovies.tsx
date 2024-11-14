@@ -11,13 +11,6 @@ import Fuse, { IFuseOptions, FuseResult } from "fuse.js";
 
 import { useDebounce } from "use-debounce";
 
-const Container = styled.div`
-  backdrop-filter: blur(20px) saturate(1.8) contrast(1.2);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-`;
-
 const DarkOverlay = styled.div`
   position: absolute;
   inset: 0;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiSearch, FiX } from "react-icons/fi";
 import debounce from "lodash.debounce";
@@ -20,30 +20,27 @@ const Search: React.FC = () => {
   useOnClickOutside(dropdownRef, () => setIsFocused(false));
 
   // Debounced search function
-  const debouncedSearch = useCallback(
-    debounce(async (searchQuery: string) => {
-      if (!searchQuery.trim()) {
-        setResults([]);
-        return;
-      }
+  const debouncedSearch = debounce(async (searchQuery: string) => {
+    if (!searchQuery.trim()) {
+      setResults([]);
+      return;
+    }
 
-      setLoading(true);
-      setError(null);
+    setLoading(true);
+    setError(null);
 
-      try {
-        const data = await fetchSearchResults(searchQuery);
-        setResults(data.results);
-      } catch (err: any) {
-        console.error("Error fetching search results:", err);
-        setError(
-          err.response?.data?.message || "Failed to fetch search results."
-        );
-      } finally {
-        setLoading(false);
-      }
-    }, 500),
-    []
-  );
+    try {
+      const data = await fetchSearchResults(searchQuery);
+      setResults(data.results);
+    } catch (err: any) {
+      console.error("Error fetching search results:", err);
+      setError(
+        err.response?.data?.message || "Failed to fetch search results."
+      );
+    } finally {
+      setLoading(false);
+    }
+  }, 500);
 
   // Handle input changes with debounce
   useEffect(() => {
