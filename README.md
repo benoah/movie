@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+Her er en README-fil på norsk som beskriver prosjektet ditt og fokuset på læring:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# My Movie
 
-In the project directory, you can run:
+Dette prosjektet er laget som en del av en læringsreise for å utvikle og forbedre ferdigheter som utvikler, med spesielt fokus på frontend-utvikling ved bruk av React og tilhørende verktøy.
+
+## Om prosjektet
+
+My Movie er en webapplikasjon utviklet med **React** og **TypeScript** for å gi en sømløs opplevelse for film- og seriefans. Med et moderne brukergrensesnitt og flere nyttige funksjoner, kan brukere søke etter filmer og serier, få anbefalinger, og holde seg oppdatert på kommende utgivelser og trender.
+
+## Teknologi og avhengigheter
+
+Dette prosjektet bruker flere avhengigheter og verktøy for å levere en moderne og responsiv opplevelse:
+
+- **React** og **TypeScript** for komponentbasert utvikling.
+- **Framer Motion** for animasjoner og brukervennlige effekter.
+- **React Router** for navigasjon.
+- **Lodash** og **Fuse.js** for effektiv databehandling og søkefunksjonalitet.
+- **Tailwind CSS** for rask og konsistent styling.
+- **Styled Components** for fleksibel, komponent-basert styling.
+
+## Tilgjengelige kommandoer
+
+For å komme i gang med prosjektet, kan du bruke følgende kommandoer:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Starter applikasjonen i utviklingsmodus.\
+Åpne [http://localhost:3000](http://localhost:3000) i nettleseren din for å se applikasjonen.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Kjører testene i interaktivt modus.\
+Se [testing-dokumentasjonen](https://facebook.github.io/create-react-app/docs/running-tests) for mer informasjon.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Bygger applikasjonen for produksjon i `build`-mappen.\
+Optimaliserer React-koden for best mulig ytelse.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Merk:** `eject` er en enveiskommando. Når du har kjørt denne, kan du ikke gå tilbake! Denne kommandoen vil fjerne den forhåndskonfigurerte oppsettet fra prosjektet ditt og gi deg full kontroll over alle konfigurasjonsfiler.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Lær mer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Dette prosjektet ble startet med [Create React App](https://github.com/facebook/create-react-app). Utforsk gjerne den [offisielle dokumentasjonen](https://facebook.github.io/create-react-app/docs/getting-started) for flere detaljer.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For å lære mer om React, se [React-dokumentasjonen](https://reactjs.org/).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dette prosjektet handler om å vokse som utvikler ved å jobbe praktisk med teknologier som React og TypeScript. Gjennom denne applikasjonen får du erfaring med å bygge moderne brukergrensesnitt, integrere tredjepartsbiblioteker, og optimere koden for en produksjonsklar applikasjon.
