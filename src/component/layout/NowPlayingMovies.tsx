@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactPlayer from "react-player";
-import { FiPlay, FiSearch, FiX } from "react-icons/fi";
+import { FiSearch, FiX } from "react-icons/fi";
 import {
   fetchNowPlayingMovies,
   fetchMovieVideos,
@@ -29,8 +29,6 @@ const DarkOverlay = styled.div`
   border-radius: 16px;
 `;
 
-const MotionContainer = motion(Container);
-
 export type Movie = {
   id: number;
   title: string;
@@ -45,7 +43,7 @@ const NowPlayingMovies: React.FC = () => {
   const [videoKey, setVideoKey] = useState<string | null>(null);
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [, setCurrentIndex] = useState<number>(0);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
