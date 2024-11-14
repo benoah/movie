@@ -163,7 +163,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
                     {movie.title}
                   </motion.h1>
 
-                  <div className="flex flex-wrap gap-4 items-center pt-8 pl-2">
+                  <div className="flex flex-wrap gap-4 items-center py-16 pl-2">
                     <motion.button
                       className={`flex items-center px-6 py-3 text-sm sm:text-base font-semibold rounded-full transition-all duration-300 ease-in-out shadow-lg ${
                         watchlist.has(movie.id)

@@ -7,11 +7,13 @@ import Footer from "./component/navigation/Footer";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Nav />
-      <Home />
-      <Footer />
-    </div>
+    <>
+      <div className="App px-4 md:px-8 lg:px-16">
+        <Nav />
+        <Home />
+        <Footer />
+      </div>
+    </>
   );
 };
 
