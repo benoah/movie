@@ -4,7 +4,7 @@ Welcome to **My Movie**, a React-based movie recommendation app. This project is
 
 ## 🚀 Live Demo
 
-Check out the live demo [here](https://your-demo-link.com).
+Check out the live demo [here](https://cosmic-buttercream-90cc24.netlify.app/).
 
 ## 📦 Features
 
