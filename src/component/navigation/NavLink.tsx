@@ -36,7 +36,7 @@ const NavLink: React.FC<NavLinkProps> = ({
         duration={500}
         offset={-70}
         onClick={onClick}
-        className={`text-xs text-[#dcdccd] hover:text-white transition-colors duration-300 focus:outline-none ${className}`}
+        className={`text-medium text-[#dcdccd] hover:text-white transition-colors duration-300 focus:outline-none ${className}`}
         activeClass="active"
         spy={true}
       >

@@ -58,12 +58,10 @@ const DarkOverlay = styled.div`
   transition: backdrop-filter 0.3s ease;
 `;
 
-// Types
 interface HeroSectionProps {
   className?: string;
 }
 
-// HeroSection Component
 const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [videoKey, setVideoKey] = useState<string | null>(null);
